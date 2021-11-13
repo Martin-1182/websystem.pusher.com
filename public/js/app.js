@@ -2127,7 +2127,7 @@ var app = new Vue({
   el: '#app',
   created: function created() {
     window.Echo.channel('notification').listen('MessageNotification', function (e) {
-      console.error('Welp, this showed up without a refresh!');
+      console.log('Welp, this showed up without a refresh!');
     });
   }
 });

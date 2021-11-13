@@ -33,7 +33,7 @@ const app = new Vue({
     created() {
         window.Echo.channel('notification')
         .listen('MessageNotification', (e) => {
-            console.error('Welp, this showed up without a refresh!');
+            console.log('Welp, this showed up without a refresh!');
         });
     }
 });
